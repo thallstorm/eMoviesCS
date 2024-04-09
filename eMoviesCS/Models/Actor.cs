@@ -6,8 +6,14 @@ namespace eMoviesCS.Models
 	{
 		[Key]
 		public int Id { get; set; }
+
+		[Display(Name = "Profile Picture")]
 		public string? ProfilePictureURL { get; set; }
-        public required string FullName { get; set; }
+
+		[Display(Name = "Full Name")]
+		public required string FullName { get; set; }
+
+		[Display(Name = "Biography")]
 		public string? Bio { get; set; }
 
 		//Relationships

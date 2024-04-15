@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using eMoviesCS.Data.Base;
+using System.ComponentModel.DataAnnotations;
 
 namespace eMoviesCS.Models
 {
-	public class Actor
+	public class Actor: IEntityBase 
 	{
 		[Key]
 		public int Id { get; set; }
@@ -11,7 +12,7 @@ namespace eMoviesCS.Models
 		public string? ProfilePictureURL { get; set; }
 
 		[Display(Name = "Full Name")]
-		public required string FullName { get; set; }
+		public string? FullName { get; set; }
 
 		[Display(Name = "Biography")]
 		public string? Bio { get; set; }

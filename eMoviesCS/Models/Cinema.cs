@@ -11,7 +11,7 @@ namespace eMoviesCS.Models
 		public string? Logo { get; set; }
 
 		[Display(Name = "Cinema Name")]
-		public required string Name { get; set; }
+		public string? Name { get; set; }
 
 		[Display(Name = "Cinema Description")]
 		public string? Description { get; set; }
